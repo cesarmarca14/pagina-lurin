@@ -43,7 +43,7 @@
     
   @media screen and (max-width:750px) {
     .container img{
-        border: solid red
-        
+        /* border: solid  */
+        max-height:250px;
     }
   };
