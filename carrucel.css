@@ -1,0 +1,49 @@
+
+.main-container {
+    max-width: 100%;
+    height: auto;
+    animation: carrucel 9s infinite alternate ease-in;
+  }
+  
+  .sub-container {
+    display: flex;
+    width: 400%;
+  
+  }
+  .container {
+    width: 100%;
+    position: relative;
+  }
+  .container img {
+    width: 100%;
+    height: 600px;
+  }
+  
+  @keyframes carrucel {
+      0%,
+      20% {
+        margin-left: 0; /*imagen-1*/
+      }
+    
+      25%,
+      45% {
+        margin-left: -100%; /*imagen-2*/
+      }
+    
+      50%,
+      70% {
+        margin-left: -200%; /*imagen-3*/
+      }
+     
+      75%,
+      100% {
+        margin-left: -300%; /*imagen-4*/
+      }
+    }
+    
+  @media screen and (max-width:750px) {
+    .container img{
+        /* border: solid  */
+        max-height:250px;
+    }
+  };
