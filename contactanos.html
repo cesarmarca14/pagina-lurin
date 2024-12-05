@@ -5,11 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./contacto.css">
+    <link rel="stylesheet" href="./hamburgesa.css">
+    <link rel="stylesheet" href="./style.css">
+
     <title>formulario contacto</title>
 </head>
 
 <body>
+    <!-- -------------menu-hamburgesa------------ -->
+    <section class="padre">
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+        <label for="menu-toggle" class="menu">
+          <i class="bi bi-list"></i>
+        </label>
+        <div class="hijo">
+          <a href="index.html">Inicio</a>
+          <a href="#">Carreras</a>
+          <a href="#">Admisión</a>
+          <a href="#">Noticias</a>
+          <a href="./contactanos.html">Contactanos</a>
+          <a href="#">Intranet</a>
+        </div>
+      </section>
     <section class="formulario_contacto">
+        
         <h3>FORMULARIO DE CONTACTO</h3>
         <input class="controls" type="text" name="nombres" id="nombres" placeholder="ingrese su nombre">
         <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="ingrese su apellido">
