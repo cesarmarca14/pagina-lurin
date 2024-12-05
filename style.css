@@ -2,21 +2,17 @@
   --color-marron: #b2904b;
   --color-ladrillo: #df692b;
   --color-verdeladrillo: #69785a;
-  --font-pequeña:24px;
-  --font-letra-titulo:"Oxanium", serif;
-  --font-letra-contenido:"Poppins", serif;
-
+  --font-pequeña: 30px;
+  --font-letra-titulo: "Oxanium", serif;
+  --font-letra-contenido: "Poppins", serif;
 }
-
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
+  font-family: var(--font-letra-contenido);
 }
-  
 
 /* --------row----------- */
 
@@ -27,37 +23,25 @@
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 20px;
-  background: rgb(169, 245, 246);
+  background: rgb(253, 208, 46);
   background: linear-gradient(
-    180deg,
-    rgba(169, 245, 246, 1) 0%,
-    rgb(94, 198, 230) 100%
+    90deg,
+    rgba(253, 208, 46, 1) 10%,
+    rgba(191, 63, 29, 1) 71%,
+    rgba(109, 27, 5, 1) 100%
   );
 }
 .row {
   /* border: solid yellow; */
-  background: rgb(122, 234, 236);
-  background: linear-gradient(
-    180deg,
-    rgba(122, 234, 236, 1) 0%,
-    rgb(247, 244, 238) 100%
-  );
   text-align: center;
   text-align: justify;
   padding: 30px 40px 40px 30px;
   border-radius: 20px;
-  border: solid rgba(0, 183, 255, 0.212);
-  width: 200px;
+  width: 400px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.row:hover {
-  border-bottom: solid rgba(11, 86, 121, 0.356) 10px;
-  border-right: solid rgba(25, 26, 94, 0.39) 10px;
-  transition: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
-  padding: 20px;
-}
 
 .row h2 {
   border-bottom: solid;
@@ -72,12 +56,12 @@
 }
 
 .row h2:hover {
-  color: blue;
+  color:#1f1a1b;
 }
 
 /* ----------img----------- */
 .row img {
-  width: 200px;
+  width: 350px;
   height: 200px;
   border-radius: 20px;
 
@@ -87,4 +71,3 @@
   display: flex;
   flex-direction: column;
 }
-

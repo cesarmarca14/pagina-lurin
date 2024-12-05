@@ -6,11 +6,13 @@
 
 /* Contenedor principal */
 .padre {
-    background-color: var(--color-ladrillo);
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    background: rgb(253,208,46);
+background: linear-gradient(90deg, rgba(253,208,46,1) 0%, rgba(191,63,29,1) 45%, rgba(109,27,5,1) 100%);
 }
 
 /* Botón de menú (hamburguesa) */
@@ -39,13 +41,14 @@
 /* Links estilo individual */
 .hijo a {
     text-decoration: none;
-    color: white;
+    color:white;
     padding: 10px 15px;
 }
 
 .hijo a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
+    color:#1f1a1b;
 }
 
 /* ------------- Modo Responsive ------------- */
@@ -66,7 +69,6 @@
         display: none;
         flex-direction: column;
         width: 40%;
-        background-color: var(--color-verdeladrillo);
         position: absolute;
         top: 60px; /* Debajo del botón hamburguesa */
         left: 0;
@@ -82,7 +84,7 @@
     .hijo a {
         text-align: left;
         width: 100%;
+        font-size: 20px;
         padding: 15px 20px;
-        background-color: rgb(0, 0, 255);
     }
 }
