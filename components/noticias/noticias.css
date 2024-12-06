@@ -1,8 +1,16 @@
+:root {
+    --color-marron: #1f1a1b;
+    --color-ladrillo: #df692b;
+    --color-verdeladrillo: #69785a;
+    --font-sise: 30px;
+    --font-letra-titulo: "Oxanium", serif;
+  }
+  
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: var(--font-letra-titulo);
 }
 
 .container {
@@ -26,13 +34,13 @@
 
 
 .seccion .titulo h2 {
-    font-size: 50px;
+    font-size: 60px;
         /* Aumentar tamaño del título */
         font-weight: bold;
         /* Negrita para hacerlo más visible */
         margin: 0;
         padding: 0;
-        color: #333;
+        color:var(--color-marron);
         /* Color oscuro para el título */
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
@@ -77,18 +85,23 @@
 }
 
 .contenido {
+    
     padding: 15px 20px;
+    /* border: solid; */
 }
 
 .contenido h4 {
     font-size: 24px;
-    color: #222;
-    font-weight: 500;
+    color:var(--color-marron);
+    /* border: solid; */
 }
 
 .contenido p {
-    color: #7e7e7e;
+    color: #484545;
     font-size: 15px;
+    /* border: solid; */
+    line-height: 35px;
+    padding: 30px;
 }
 
 .contenido a {
