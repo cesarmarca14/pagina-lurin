@@ -84,6 +84,7 @@ button{
 
 /* --------------futer---------- */
 .futer-main{
+  max-width: 100%;
   margin-top: -10PX;
   background-color: #69785a;
   color: white;

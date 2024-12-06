@@ -1,12 +1,17 @@
+:root {
+    --color-marron: #1f1a1b;
+    --color-ladrillo: #df692b;
+    --color-verdeladrillo: #69785a;
+    --font-sise: 30px;
+    --font-letra-titulo: "Oxanium", serif;
+  }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-letra-titulo);
 }
 
-body {
-    background-image: url(./img/135464-velocidad-movimiento-3840x2160.jpg);
-}
 
 .formulario_contacto {
     width: 400px;
@@ -18,6 +23,7 @@ body {
     font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 37px #000;
+    text-align: center;
 }
 
 .formulario_contacto h3 {
@@ -77,4 +83,5 @@ body {
     color: white;
     margin: 16px 0;
     font-size: 16px;
+    margin-top: 50px;
 }

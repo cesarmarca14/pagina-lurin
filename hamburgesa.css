@@ -1,5 +1,6 @@
 /* ----------- Menú Hamburguesa ------------------------ */
 /* Checkbox oculto */
+
 .menu-checkbox {
   display: none;
 }
@@ -49,7 +50,7 @@
 /* Links estilo individual */
 .hijo a {
   text-decoration: none;
-  color: white;
+  color: var(--);
   padding: 10px 15px;
   font-family: var(--font-letra-titulo);
   font-size: 20px;
