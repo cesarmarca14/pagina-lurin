@@ -9,7 +9,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font-letra-titulo);
 }
 
 
@@ -84,4 +83,21 @@
     margin: 16px 0;
     font-size: 16px;
     margin-top: 50px;
+}
+
+
+/* -----------responsi---470px-------- */
+@media screen and (  max-width:470px) {
+.formulario_contacto{
+    /* border: solid; */
+    width: 70%;
+    
+}
+.formulario_contacto h3{
+    font-size: 18px;
+}
+.formulario_contacto p{
+    font-size: 14px;
+}
+
 }

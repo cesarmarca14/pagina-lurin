@@ -1,58 +1,63 @@
-*{
-  padding: 0px;
-  margin: 0px;
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  font-family: var(--font-letra-titulo);
 }
+/* Contenedor principal */
 .main-container {
-    max-width: 100%;
-    /* border: solid rebeccapurple; */
-    height: auto;
-    animation: carrucel 9s infinite alternate ease-in;
-    overflow: hidden;
-    
+  max-width: 100%;
+  height: auto;
+  animation: carrucel 9s infinite alternate ease-in;
+}
+
+/* Contenedor del carrusel */
+.sub-container {
+  display: flex;
+  width: 400%; /* Cuatro imágenes, cada una ocupa 25% */
+
+}
+
+/* Cada contenedor de imagen */
+.container {
+  width: 100%;
+  position: relative;
+}
+
+/* Estilo para las imágenes */
+.container img {
+  width: 100%; /* Asegura que la imagen ocupe el 100% de su contenedor */
+  height: 600px; /* Ajusta la altura según sea necesario */
+}
+
+/* Animación del carrusel */
+@keyframes carrucel {
+  0%,
+  20% {
+      margin-left: 0%; /* Muestra la primera imagen */
+  }
+  25%,
+  45% {
+      margin-left: -100%; /* Muestra la segunda imagen */
+  }
+  50%,
+  70% {
+      margin-left: -200%; /* Muestra la tercera imagen */
+  }
+  75%,
+  100% {
+      margin-left: -300%; /* Muestra la cuarta imagen */
   }
   
-  .sub-container {
-    display: flex;
-    width: 400%;
-  }
-  .container {
-    width: 100%;
-    position: relative;
-  
-  }
+}
+
+/* Aplicando la animación al contenedor del carrusel */
+.main-container {
+  animation: carrucel 9s infinite alternate ease-in;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 750px) {
   .container img {
-    max-width: 100%;
-    height: 600px;
-    
+      max-height: 180px;
   }
-  
-  @keyframes carrucel {
-      0%,
-      20% {
-        margin-left: 0; /*imagen-1*/
-      }
-    
-      25%,
-      45% {
-        margin-left: -100%; /*imagen-2*/
-      }
-    
-      50%,
-      70% {
-        margin-left: -200%; /*imagen-3*/
-      }
-     
-      75%,
-      100% {
-        margin-left: -300%; /*imagen-4*/
-      }
-    }
-    
-  @media screen and (max-width:750px) {
-    .container img{
-        /* border: solid  */
-        max-height:250px;
-    }
-  };
+}

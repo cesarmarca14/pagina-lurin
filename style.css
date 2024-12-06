@@ -119,4 +119,44 @@ button{
   justify-content: center;
   align-items: center;
   color: white;
+
+}
+
+/* -----------responsi---420px-------- */
+@media screen and (  max-width:470px) {
+  .futer-main{
+    justify-content: flex-start;
+    border: solid rebeccapurple;
+    overflow: hidden;
+    
+  
+  }
+  .container-row .row {
+    /* border: solid yellow; */
+    max-width: 80%;
+    height: 40%;
+    font-size: 10px;
+    
+  }
+  .row img{
+    /* border: solid red; */
+    width:80%;
+    margin-top: 50px;
+  }
+  .row h2{
+    font-size: 8vw;
+  }
+ 
+/* - -----futer-------- */
+  .sub-futer h2{
+    font-size: 5vw;;
+    overflow: hidden;
+    /* border: solid red; */
+  }
+  .sub-futer p{
+    font-size: 13px;
+  }
+  .futer p{
+    font-size: 13px;
+  }
 }

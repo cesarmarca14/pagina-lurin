@@ -10,10 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--font-letra-titulo);
 }
-
-
 
 .banner {
   width: 100%;
@@ -27,7 +24,6 @@
 }
 
 .main {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,3 +100,18 @@
   /* border: solid; */
 }
 
+/* -----------responsi---470px-------- */
+@media screen and (  max-width:470px) {
+  .panel_texto{
+      /* border: solid; */
+      width: 70%;
+      
+  }
+  .formulario_contacto h3{
+      font-size: 18px;
+  }
+  .formulario_contacto p{
+      font-size: 14px;
+  }
+  
+  }
