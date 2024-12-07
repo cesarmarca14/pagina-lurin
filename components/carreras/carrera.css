@@ -38,13 +38,14 @@
   flex-wrap: wrap;
   flex: 1;
   margin: 0;
-  gap: 10px;
   height: auto;
+  /* border: solid rebeccapurple; */
 }
 /*sub panel*/
 .sub_panel {
   background-color: #e7fdf6;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 60px;
   margin-top: -10px;
@@ -53,7 +54,7 @@
 /*sub panel de texto*/
 .panel_texto {
   padding: 60px ;
-  width: 800px;
+  width: 700px;
   text-align: left;
   line-height: 40px;
   /* border: solid red; */
